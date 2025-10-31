@@ -1,5 +1,9 @@
-resource "kubernetes_namespace" "vault" {
-  metadata {
-    name = "vault"
+resource "tfe_workspace" "test_workspace" {
+  name         = "test-ws"
+  organization = "test-org"
+  tags = {
+    system     = "test"
+    onboarding = "true"
+    permanent  = "true"
   }
 }
