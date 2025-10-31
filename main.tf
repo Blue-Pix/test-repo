@@ -2,8 +2,8 @@ resource "tfe_workspace" "test_workspace" {
   name         = "test-ws"
   organization = "test-org"
   tags = {
-    system     = "test"
+    system     = "GenAI"
     onboarding = "true"
-    permanent  = "true"
+    env = "test"
   }
 }
